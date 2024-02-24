@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Paralla from "../../components/Paralax/Paralla";
 import Provide from "../../components/Provide/Provide";
@@ -12,6 +13,7 @@ const Home = () => {
             <Paralla></Paralla>
             <Services></Services>
             <Questions></Questions>
+            <Footer></Footer>
         </div>
     );
 };
