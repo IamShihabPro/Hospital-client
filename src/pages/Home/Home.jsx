@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import Paralla from "../../components/Paralax/Paralla";
 import Provide from "../../components/Provide/Provide";
+import Questions from "../../components/Questions/Questions";
 import Services from "../../components/Services/Services";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Provide></Provide>
             <Paralla></Paralla>
             <Services></Services>
+            <Questions></Questions>
         </div>
     );
 };
