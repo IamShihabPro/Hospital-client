@@ -36,24 +36,6 @@
         "description": "Clinical laboratory tests and analysis to aid in the diagnosis and treatment of diseases.",
         "icon": "laboratory-services"
       },
-      {
-        "id": 7,
-        "name": "Pharmacy",
-        "description": "Convenient access to prescription medications and pharmacy services.",
-        "icon": "pharmacy"
-      },
-      {
-        "id": 8,
-        "name": "Physical Therapy",
-        "description": "Individualized therapy programs to help patients recover from injuries, surgeries, or chronic conditions.",
-        "icon": "physical-therapy"
-      },
-      {
-        "id": 9,
-        "name": "Specialty Care",
-        "description": "Specialized medical care for specific health conditions or diseases provided by experts in the field.",
-        "icon": "specialty-care"
-      },
      
     ]
 
