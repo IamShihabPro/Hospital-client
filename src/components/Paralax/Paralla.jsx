@@ -23,7 +23,7 @@ const ParallaxSection = () => {
                                         A hospital is a medical facility that provides comprehensive healthcare services to patients in need of medical attention. It is typically staffed with medical professionals, including doctors, nurses, and support staff, who work together to diagnose, treat, and care for patients.
                                     </span>
                                 </p>
-                                <button className='bg-blue-600 text-white rounded-md px-4 py-2 mt-4 lg:mt-6 w-4/6'>Learn More</button>
+                                <button className='bg-blue-600 text-white rounded-md px-4 py-2 mt-4 lg:mt-6'>Learn More</button>
                             </div>
                             {/* Right side: Image */}
                             <div className="w-full lg:w-1/2 flex justify-center">
