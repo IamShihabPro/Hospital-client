@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import DoctorImage from '../../assets/doctor/fd-3.avif';
+import { FiPlusSquare } from "react-icons/fi";
+import { FaRegMinusSquare } from "react-icons/fa";
 
 const Questions = () => {
   const [items, setItems] = useState([
@@ -22,6 +24,7 @@ const Questions = () => {
   const handleClick = (index) => {
     setActiveIndex(prevIndex => prevIndex === index ? null : index);
   };
+  console.log('activeIndex', activeIndex)
 
   return (
     <div className="container mx-auto my-10">
@@ -35,19 +38,15 @@ const Questions = () => {
             {items.map((item, index) => (
               <div key={index} className="mb-4 border rounded">
                 <div
-                  className={`flex justify-between items-center p-4 cursor-pointer ${activeIndex === index ? 'bg-gray-200' : ''}`}
+                  className={`flex justify-between items-center p-4 cursor-pointer transition ease-in-out duration-300  gap-4 ${activeIndex === index ? 'bg-gray-200' : ''}`}
                   onClick={() => handleClick(index)}
                 >
                   <span className="text-lg font-semibold">{item.title}</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className={`h-6 w-6 transform ${activeIndex === index ? 'rotate-180' : ''} transition-transform`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                  </svg>
+
+                  {
+                    activeIndex === index ? <p> <FaRegMinusSquare className='w-6 h-6'/> </p>  : <p> <FiPlusSquare className='w-6 h-6'/> </p> 
+                  }
+
                 </div>
                 {activeIndex === index && (
                   <div className="p-4 bg-gray-100">{item.content}</div>
