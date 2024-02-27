@@ -7,7 +7,8 @@ const doctors = [
       "location": "Dhaka",
       "experience_years": 18,
       "photo": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?t=st=1709013602~exp=1709017202~hmac=b7f12e601f2ec239b1a1133c632fda3d6da63c5fa5d519582a1fdeabebc211f6&w=996",
-      "rating": 4.9
+      "rating": 4.9,
+      "reviews": 212,
     },
     {
       "id": 2,
@@ -16,8 +17,9 @@ const doctors = [
       "hospital": "Dhaka Shishu Hospital",
       "location": "Dhaka",
       "experience_years": 15,
-      "photo": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?t=st=1709013602~exp=1709017202~hmac=b7f12e601f2ec239b1a1133c632fda3d6da63c5fa5d519582a1fdeabebc211f6&w=996",
-      "rating": 4.8
+      "photo": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?t=st=1709013676~exp=1709017276~hmac=9675a78d9e46fefafc206f31aeb3a280afb6f0992e9773556d803f7bc521a794&w=1060",
+      "rating": 4.8,
+      "reviews": 212,
     },
     {
       "id": 3,
@@ -27,7 +29,8 @@ const doctors = [
       "location": "Dhaka",
       "experience_years": 20,
       "photo": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?t=st=1709013602~exp=1709017202~hmac=b7f12e601f2ec239b1a1133c632fda3d6da63c5fa5d519582a1fdeabebc211f6&w=996",
-      "rating": 4.7
+      "rating": 4.7,
+      "reviews": 212,
     },
     {
       "id": 4,
@@ -36,8 +39,9 @@ const doctors = [
       "hospital": "Bangladesh Medical College Hospital",
       "location": "Dhaka",
       "experience_years": 12,
-      "photo": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?t=st=1709013602~exp=1709017202~hmac=b7f12e601f2ec239b1a1133c632fda3d6da63c5fa5d519582a1fdeabebc211f6&w=996",
-      "rating": 4.6
+      "photo": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?t=st=1709013676~exp=1709017276~hmac=9675a78d9e46fefafc206f31aeb3a280afb6f0992e9773556d803f7bc521a794&w=1060",
+      "rating": 4.6,
+      "reviews": 212,
     },
     {
         "id": 5,
@@ -47,7 +51,8 @@ const doctors = [
         "location": "Dhaka",
         "experience_years": 16,
         "photo": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?t=st=1709013676~exp=1709017276~hmac=9675a78d9e46fefafc206f31aeb3a280afb6f0992e9773556d803f7bc521a794&w=1060",
-        "rating": 4.7
+        "rating": 4.7,
+        "reviews": 212,
       },
       {
         "id": 6,
@@ -56,7 +61,9 @@ const doctors = [
         "hospital": "Square Hospitals Ltd.",
         "location": "Dhaka",
         "experience_years": 21,
-        "rating": 4.9
+        "photo": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?t=st=1709013602~exp=1709017202~hmac=b7f12e601f2ec239b1a1133c632fda3d6da63c5fa5d519582a1fdeabebc211f6&w=996",
+        "rating": 4.9,
+        "reviews": 212,
       },
       {
         "id": 7,
@@ -66,7 +73,8 @@ const doctors = [
         "location": "Dhaka",
         "experience_years": 14,
         "photo": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?t=st=1709013676~exp=1709017276~hmac=9675a78d9e46fefafc206f31aeb3a280afb6f0992e9773556d803f7bc521a794&w=1060",
-        "rating": 4.8
+        "rating": 4.8,
+        "reviews": 212,
       },
       {
         "id": 8,
@@ -76,7 +84,8 @@ const doctors = [
         "location": "Dhaka",
         "experience_years": 19,
         "photo": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?t=st=1709013602~exp=1709017202~hmac=b7f12e601f2ec239b1a1133c632fda3d6da63c5fa5d519582a1fdeabebc211f6&w=996",
-        "rating": 4.6
+        "rating": 4.6,
+        "reviews": 212,
       },
       {
         "id": 9,
@@ -86,7 +95,8 @@ const doctors = [
         "location": "Dhaka",
         "experience_years": 13,
         "photo": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?t=st=1709013676~exp=1709017276~hmac=9675a78d9e46fefafc206f31aeb3a280afb6f0992e9773556d803f7bc521a794&w=1060",
-        "rating": 4.5
+        "rating": 4.5,
+        "reviews": 212,
       },
       {
         "id": 10,
@@ -96,7 +106,8 @@ const doctors = [
         "location": "Dhaka",
         "experience_years": 17,
         "photo": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?t=st=1709013602~exp=1709017202~hmac=b7f12e601f2ec239b1a1133c632fda3d6da63c5fa5d519582a1fdeabebc211f6&w=996",
-        "rating": 4.8
+        "rating": 4.8,
+        "reviews": 212,
       }
   ]
 
