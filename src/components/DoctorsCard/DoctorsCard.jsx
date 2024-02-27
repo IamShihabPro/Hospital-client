@@ -1,6 +1,6 @@
 import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
-import { FaEye } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
 import { FaCircleArrowRight } from 'react-icons/fa6';
 
 const DoctorsCard = ({doctor}) => {
@@ -30,7 +30,7 @@ const DoctorsCard = ({doctor}) => {
           </div>
           <h1 className='text-gray-600 font-medium'>{hospital}</h1>
           <div className='flex justify-between items-center'>
-            <h1>{location}</h1>
+            <h1 className='flex items-center gap-2 justify-start'> <span> <IoLocationOutline/> </span> {location}</h1>
             <button className='rounded-full text-white bg-blue-600 mt-3'> < FaCircleArrowRight className='w-6 h-6' /> </button>
           </div>
 
