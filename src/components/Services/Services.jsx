@@ -5,6 +5,7 @@ const Services = () => {
     return (
         <div className='container mx-auto my-20'>
             <h1 className='text-4xl font-bold text-center mb-10'>Our Medical Services</h1>
+            <div className='max-w-7xl mx-auto'>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-4">
                 {
                     ServicesList.map((service, i) =>(
@@ -20,6 +21,7 @@ const Services = () => {
                         </div>
                     ))
                 }
+            </div>
             </div>
         </div>
     );

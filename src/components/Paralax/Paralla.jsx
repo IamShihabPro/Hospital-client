@@ -11,7 +11,7 @@ const ParallaxSection = () => {
                 bgImageAlt="the dog"
                 strength={-200}
             >
-                <div className="container mx-auto hero min-h-[600px] relative">
+                <div className="max-w-7xl mx-auto hero min-h-[600px] relative">
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center px-4 sm:px-6 lg:px-0 gap-6 lg:gap-0">

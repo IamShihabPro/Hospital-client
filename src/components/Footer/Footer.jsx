@@ -6,8 +6,8 @@ import { FaUserDoctor } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-6 w-full">
-      <div className="container mx-auto px-4 py-2 text-center text-gray-800 drop-shadow-lg">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-2 text-center text-gray-900 drop-shadow-lg">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
 
           <div className="flex flex-col justify-between items-start gap-4">
             <h1 className="text-3xl font-bold flex justify-center gap-2 items-center text-blue-600"> <FaUserDoctor/> Medicare</h1>
@@ -50,16 +50,16 @@ const Footer = () => {
             <h1 className="text-lg font-bold">Our Newsletter</h1>
             <p className="text-start">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
 
-            <div className="bg-black/20 rounded-2xl w-full py-2 px-1 flex items-center gap-1 my-3">
+            <div className="bg-black/30 rounded-sm w-full py-2 px-1 flex items-center my-3">
               {/* Input Field */}
               <input
                 type="text"
-                className="border-none p-2 bg-transparent text-white hover:bg-black/30 w-full px-2 focus:outline-none rounded-xl"
+                className="border-none p-2 bg-black/30 text-white hover:bg-black/30 w-full px-2 focus:outline-none"
                 placeholder="Your email"
               />
 
               {/* Subscribe Button */}
-              <button className="text-white bg-blue-600 px-4 py-2 rounded-2xl">
+              <button className="text-white bg-blue-600 px-4 py-2">
                 Subscribe
               </button>
             </div>

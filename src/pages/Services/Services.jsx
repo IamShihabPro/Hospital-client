@@ -16,7 +16,7 @@ const Services = () => {
 
             <div>
             <div className='container mx-auto mt-10 bg-white px-4'>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
+                    <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
                         {
                             doctorsList?.map((doctor, i) => (
                                 <DoctorsCard key={i} doctor={doctor} ></DoctorsCard>

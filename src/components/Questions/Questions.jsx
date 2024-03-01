@@ -28,7 +28,7 @@ const Questions = () => {
 
   return (
     <div className="container mx-auto my-10">
-      <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4">
         <div className='mx-4 w-10/12 mx-auto'>
           <img src={DoctorImage} alt="Doctor" className="" />
         </div>
