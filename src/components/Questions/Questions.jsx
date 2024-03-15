@@ -24,7 +24,7 @@ const Questions = () => {
   const handleClick = (index) => {
     setActiveIndex(prevIndex => prevIndex === index ? null : index);
   };
-  console.log('activeIndex', activeIndex)
+  // console.log('activeIndex', activeIndex)
 
   return (
     <div className="container mx-auto my-10">

@@ -6,7 +6,9 @@ const Signup = () => {
     const [formData, setFormData] = useState({
         name:'',
         email:'',
-        password:''
+        password:'',
+        role:'patient', // Default role
+        gender:'male'   // Default gender
     })
 
     /* 
@@ -20,6 +22,7 @@ const Signup = () => {
     }
     const handleSubmit = e =>{
         e.preventDefault()
+        console.log(formData)
     }
     return (
         <div className="mt-28">
@@ -56,7 +59,7 @@ const Signup = () => {
                                     <label className="font-semibold text-gray-700 leading-7">
                                         Are you:
                                         <select 
-                                        name="role" 
+                                        name="role" value={formData.role} onChange={handleInputChange}
                                         className="ml-2 focus:outline-none font-semibold text-gray-600 leading-7 px-2 py-2"
                                         >
                                         <option value="patient">Patient</option>
@@ -67,7 +70,7 @@ const Signup = () => {
                                     <label className="font-semibold text-gray-700 leading-7">
                                         Gender:
                                         <select 
-                                        name="gender" 
+                                        name="gender" value={formData.gender} onChange={handleInputChange}
                                         className="ml-2 focus:outline-none font-semibold text-gray-600 leading-7 px-2 py-2"
                                         >
                                         <option value="patient">Male</option>
