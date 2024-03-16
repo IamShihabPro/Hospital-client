@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import SignUp from '../../assets/images/signup.jpg'
 import UserIcon from '../../assets/images/User-Icon.png'
+import { AuthContext } from "../../Provider/AuthProvider";
 const Signup = () => {
+    const {createUser, loading, setLoading } = useContext(AuthContext)
+
     const [formData, setFormData] = useState({
         name:'',
         email:'',
@@ -23,6 +26,14 @@ const Signup = () => {
     const handleSubmit = e =>{
         e.preventDefault()
         console.log(formData)
+
+        createUser(formData.email, formData.password)
+        .then(res =>{
+            const user = res.user
+        })
+        .catch(err =>{
+            console.log(err)
+        })
     }
     return (
         <div className="mt-28">

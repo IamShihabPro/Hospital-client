@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FaUserDoctor } from "react-icons/fa6";
 import { NavLink, useLocation } from 'react-router-dom';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const {user, logOut} = useContext(AuthContext)
+
+  const handleLogout = () =>{
+    logOut().then(()=>{}).catch(err => console.log(err))
+  }
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -15,7 +21,7 @@ const Navbar = () => {
     { id: 1, link: '/', title: 'Home' },
     { id: 2, link: '/services', title: 'Services' },
     { id: 3, link: '/contact', title: 'Contact' },
-    { id: 4, link: '/login', title: 'Login' },
+    // { id: 4, link: '/login', title: 'Login' },
   ];
 
   return (
@@ -41,6 +47,15 @@ const Navbar = () => {
                   {title}
                 </NavLink>
               ))}
+
+              {
+                user ? <NavLink onClick={handleLogout} className={` hover:scale-105 px-3 py-2 rounded-md text-lg font-bold text-gray-800`} >Logout</NavLink>
+                    : <NavLink to='/login' activeClassName="text-red-500" className={` hover:scale-105 px-3 py-2 rounded-md text-lg font-bold  ${
+                      location.pathname === '/login' ? 'text-sky-500' : 'text-gray-800'}`} >Login</NavLink>
+              }
+
+              {/* <NavLink to='/login' activeClassName="text-red-500" className={` hover:scale-105 px-3 py-2 rounded-md text-lg font-bold  ${
+                    location.pathname === '/login' ? 'text-sky-500' : 'text-gray-800'}`} >Login</NavLink> */}
             </div>
           </div>
 
