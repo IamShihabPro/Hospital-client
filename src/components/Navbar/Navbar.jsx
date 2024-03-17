@@ -72,25 +72,24 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`${
-            isOpen ? 'left-0' : '-left-full'
-          } md:hidden lg:hidden bg-blue-400 py-2 px-2 shadow-sm fixed top-0 h-full w-56 transition-transform duration-300 ease-in-out`}
-        >
-          <div className="flex flex-col justify-start items-start h-full mt-20">
-            {navItems.map(({ id, link, title }) => (
-              <NavLink
-                key={id}
-                to={link}
-                activeClassName="text-red-500" // Color for active page
-                className={`block px-3 py-2 rounded-md text-base font-bold mb-2 ${
-                  location.pathname === link ? 'text-gray-700' : 'text-white'
-                }`}
-              >
-                {title}
-              </NavLink>
-            ))}
-          </div>
-        </div>
+  className={`md:hidden lg:hidden py-2 px-2 shadow-sm fixed left-0 top-0 h-full w-56 transition-transform duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} bg-blue-400`}
+>
+  <div className="flex flex-col justify-start items-start h-full mt-20">
+    {navItems.map(({ id, link, title }) => (
+      <NavLink
+        key={id}
+        to={link}
+        activeClassName="text-red-500" // Color for active page
+        className={`block px-3 py-2 rounded-md text-base font-bold mb-2 ${
+          location.pathname === link ? 'text-gray-700' : 'text-white'
+        }`}
+      >
+        {title}
+      </NavLink>
+    ))}
+  </div>
+</div>
+
       </div>
     </nav>
   );
