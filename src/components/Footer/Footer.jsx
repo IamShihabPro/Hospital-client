@@ -11,9 +11,9 @@ const Footer = () => {
 
           <div className="flex flex-col justify-between items-start gap-4">
             <h1 className="text-3xl font-bold flex justify-center gap-2 items-center text-blue-600"> <FaUserDoctor/> Medicare</h1>
-            <div className="flex flex-col items-start">
-              <p>Chittagong, Bahaddarhat</p>
-              <p>Bangladesh</p>
+            <div className="text-start">
+              <p>Chittagong, Bangladesh</p>
+              {/* <p>Bangladesh</p> */}
             </div>
             <div className="text-start">
               <h1>Phone: +8801850411622</h1>
