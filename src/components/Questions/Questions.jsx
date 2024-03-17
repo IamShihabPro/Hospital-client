@@ -29,10 +29,10 @@ const Questions = () => {
   return (
     <div className="container mx-auto my-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4">
-        <div className='mx-4 w-10/12 mx-auto'>
+        <div className='mx-4 w-10/12'>
           <img src={DoctorImage} alt="Doctor" className="" />
         </div>
-        <div className="container mx-auto p-4">
+        <div className="mx-4">
           <div className="max-w-lg mx-auto">
             <h1 className="text-3xl font-bold mb-6 text-center">Most Questions By Our Beloved Patients</h1>
             {items.map((item, index) => (
