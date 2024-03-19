@@ -1,7 +1,12 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import googleLogin from '../../assets/images/google.png'
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
+    const {signInWithGoogle} = useContext(AuthContext)
+    const navigate = useNavigate()
+
     const [formData, setFormData] = useState({
         email:'',
         password:''
@@ -19,6 +24,16 @@ const Login = () => {
     const handleSubmit = e =>{
         e.preventDefault()
     }
+
+    const handleGoogleSignIn = () =>{
+        signInWithGoogle()
+        .then(res=>{
+            console.log(res.user)
+            navigate('/')
+        })
+        .catch(err=> console.log(err.message))
+    }
+
     return (
         <div className="mt-36 mx-4">
             <div className="w-full max-w-xl mx-auto shadow-lg md:p-10">
@@ -40,8 +55,12 @@ const Login = () => {
                     </div>
 
                     <p className="text-gray-500 text-center mt-4">Don't have an account? <Link className="ml-1 text-blue-500 font-bold" to='/signup'> Sign Up </Link> </p> 
+
+                    <div onClick={handleGoogleSignIn}>
+                        <img src={googleLogin} className="w-8/12 mt-3 h-16 mx-auto cursor-pointer" alt="" />
+                    </div>
                 </form>
-            </div>
+            </div>    
         </div>
     );
 };
